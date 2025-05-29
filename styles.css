@@ -10,7 +10,7 @@ body {
 #block {
     width: 1750px;
     height: 670px;
-    background: linear-gradient(to bottom,#002C44 0% ,#006DAA 100%);;
+    background: linear-gradient(to bottom,#002C44 0% ,#006DAA 100%);
     border-radius: 50px;
     margin: 65px 60px;
     display: flex;
@@ -64,5 +64,44 @@ button {
 
 button:hover {
     background-color: #36af89;
-    color: #0b251c
+    color: #0b251c;
+    cursor: pointer;
 }
+/*telefon */
+@media only screen and (max-width: 600px) {
+    #profile_picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    
+    #block {
+        width: 250px;
+        margin: 0 50px;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(to bottom, #061A40 0%, #061A40 50%, #1043A6 100%) fixed;
+
+    }
+
+    #koszones {
+        font-size: 20px;
+    }
+
+    #rovid_bemutatkozas {
+        font-size: 20px;
+    }
+
+    button {
+
+    }
+
+   
+}
+
+ /*Tablet*/
+    @media (max-width: 1024px) {
+        
+    }
