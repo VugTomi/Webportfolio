@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webportfólió</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,7 +15,18 @@
         <img src="img/profile_picture.jpg" alt="" id="profile_picture">
         <h1 id="koszones">Köszöntelek a weboldalamon!</h1>
         <p id="rovid_bemutatkozas">Vugernicsek Tamás vagyok és ezen az oldalon megismerkedhetsz velem.</p>
-        <button>Tovább</button>
+        <button id="továbbGomb1" onclick="elso()">Tovább</button>
     </div>
+    <div id = "masodikAblak">
+        <div id="home">
+            <img src="img/home.png" alt="" id="homeicon">
+        </div>
+        <div id="block2">
+            <p id="masodik_bemutatkozas">Amiket érdemes rólam tudni elsősorban. Én a Szegedi Tudományegyetem Természettudományi és Informatikai karán (TTIK) gazdaságinformatikus nappali tagozatos hallgatója vagyok másodévben. Leginkább a programozói terület érdekel engem. Jelenleg még próbálom magam a Frontend-ben, Backend-ben és FullStack-ben képezni magam, de a célom, hogy az egyikhez tartózzak, mint fejlesztő.</p>
+            <button id="továbbGomb2" onclick="masodik()">Tovább</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
