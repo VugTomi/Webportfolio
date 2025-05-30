@@ -6,20 +6,19 @@ body {
     background: fixed linear-gradient(to bottom, #061A40 0%, #061A40 50%, #1043A6 100%);
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: stretch;
+    justify-content: center;
 }
 
 #block {
-    width: clamp(300px, 100vw, 1700px);
-    height: clamp(500px, 93vh, 800px);
+    height: 90vh;
     background: linear-gradient(to bottom,#002C44 0% ,#006DAA 100%);
     border-radius: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin: 15px;
+    margin: 30px;
     padding: 15px;
 }
 
@@ -83,4 +82,42 @@ button:hover {
     button {
         padding: 20px 25px;
     }
+}
+
+#masodikAblak {
+    display: none;
+    flex-direction: column;
+}
+
+#block2 {
+    background: linear-gradient(to bottom,#002C44 0% ,#006DAA 100%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    top: 40px;
+}
+
+#masodik_bemutatkozas {
+    width: 82vw;
+    color: white;
+    font-family: "Inter";
+    font-size: clamp(10px, 5vw, 45px);
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 10px 80px 0px;
+    line-height: 30px;
+}
+
+#homeicon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;   
+    left: 10px;  
+    cursor: pointer;
 }
