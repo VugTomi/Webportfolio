@@ -1,128 +1,184 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: fixed linear-gradient(to bottom, #061A40 0%, #061A40 50%, #1043A6 100%);
-    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: #11071F;
+    color: white;
+}
+
+nav {
     display: flex;
-    align-items: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #1A0B2E;
+    position: fixed;
+    top: 0; 
+}
+
+ul {
+    display: flex;
+    gap: 2em;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li a{
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #b700ff;
+}
+
+header {
+    margin-top: 3em;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    border: 2px solid #b700ff;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+
+section {
+    padding: 0em 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+article {
+    padding: 1em 0;
+    border-bottom: 1px solid #b700ff;
+}
+
+article h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    padding: 0 1.5em;
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 0.5em 2em 1em;
+}
+
+article p:last-child{
+    margin-bottom: 0em;
+    padding: 0 2em;
+}
+article h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    padding: 0 1.5em;
+}
+
+article #tapasztalatok{
+    padding: 0 1.5em;
+}
+
+.tapasztalat {
+    border: 2px solid #571174;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: rgba(180, 35, 205, 0.543);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.tapasztalat h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.tapasztalat:first-child img {
+    width: 80px;
+    height: auto;
+}
+
+.icon_container {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
     justify-content: center;
 }
 
-#block {
-    height: 90vh;
-    background: linear-gradient(to bottom,#002C44 0% ,#006DAA 100%);
-    border-radius: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin: 30px;
-    padding: 15px;
+.tapasztalat:nth-child(2) img:first-child {
+    width: 90px;
+    height: auto;
 }
 
-#profile_picture {
-    width: clamp(60px, 30vw, 160px);
-    height: clamp(60px, 30vw, 160px);
-    border-radius: 50%;
+.tapasztalat:nth-child(2) img:nth-child(2) {
+    width: 80px;
+    height: auto;
+    margin-right: 1em; 
 }
 
-#koszones {
-    color: white;
-    font-family: "Inter";
-    letter-spacing: 3px;
-    font-weight:500;
-    font-size: clamp(20px, 5vw, 50px);
+.tapasztalat:nth-child(2) img:nth-child(3) {
+    width: 80px;
+    height: auto;
+}
+
+
+
+.tapasztalat:last-child img {
+    width: 60px;
+    height: auto;
+}
+
+article a {
+    color: #b700ff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    padding: 1em 2em;
+}
+
+aside h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+
+footer {
     text-align: center;
-    line-height: 25px;
-    margin: 0;
-}
-
-#rovid_bemutatkozas {
-    color: white;
-    font-family: "Inter";
-    font-size: clamp(10px, 5vw, 45px);
-    font-weight: 500;
-    text-align: center;
-    margin: 0px 10px;
-    letter-spacing: 10px;
-    line-height: 60px;
-    padding-bottom: 15px;
-}
-
-button {
-    background-color: #061A40;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-family: "Inter";
-    font-size: clamp(10px, 5vw, 30px);
-    letter-spacing: 5px;
-    font-weight: 500;
-    margin: 0;
-    transition: all 300ms linear;
-    text-align: center;
-    padding: 15px 20px;
-}
-
-button:hover {
-    background-color: #36af89;
-    color: #0b251c;
-    cursor: pointer;
-}
-
-/* Táblagép vagy nagyobb */
-@media (min-width: 601px) { 
-
-}
-
-/* Asztali */
-@media (min-width: 1025px) { 
-    button {
-        padding: 20px 25px;
-    }
-}
-
-#masodikAblak {
-    display: none;
-    flex-direction: column;
-}
-
-#block2 {
-    background: linear-gradient(to bottom,#002C44 0% ,#006DAA 100%);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 90vw;
-    height: 83vh;
-    position: relative;
-    top: clamp(30px, 10vw, 40px);
-}
-
-#masodik_bemutatkozas {
-    width: 82vw;
-    color: white;
-    font-family: "Inter";
-    font-size: clamp(10px, 5vw, 45px);
-    font-weight: 500;
-    text-align: center;
-    margin: 10px 10px 50px 0px;
-    line-height: clamp(30px, 4vw, 65px);
-}
-
-#homeicon{
-    width: clamp(35px, 5vw, 60px);
-    height: clamp(35px, 5vw, 60px);
-    position: absolute;
-    top: 20px;   
-    left: 20px;  
-    cursor: pointer;
-    
-}
-
-#home {
-    width: 100%;
-    height: clamp(0px, 5vw, 30px);
+    padding: 1em 0;
+    background-color: #1A0B2E;
 }

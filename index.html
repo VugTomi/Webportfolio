@@ -11,22 +11,69 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="block">
-        <img src="img/profile_picture.jpg" alt="" id="profile_picture">
-        <h1 id="koszones">Köszöntelek a weboldalamon!</h1>
-        <p id="rovid_bemutatkozas">Vugernicsek Tamás vagyok és ezen az oldalon megismerkedhetsz velem.</p>
-        <button id="továbbGomb1" onclick="elso()">Tovább</button>
-    </div>
-    <div id = "masodikAblak">
-        <div id="home">
-            <img src="img/home.png" alt="" id="homeicon">
-        </div>
-        <div id="block2">
-            <p id="masodik_bemutatkozas">Amiket érdemes rólam tudni elsősorban. Én a Szegedi Tudományegyetem Természettudományi és Informatikai karán (TTIK) gazdaságinformatikus nappali tagozatos hallgatója vagyok másodévben. Leginkább a programozói terület érdekel engem. Jelenleg még próbálom magam a Frontend-ben, Backend-ben és FullStack-ben képezni magam, de a célom, hogy az egyikhez tartózzak, mint fejlesztő.</p>
-            <button id="továbbGomb2" onclick="masodik()">Tovább</button>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Főoldal</a></li>
+            <li><a href="#about">Rólam</a></li>
+            <li><a href="#projects">Projektek</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="./img/profile_picture.jpg" alt="Profilkép" class="profile-image">
+        <h1>Üdvözöllek a Webportfóliómban!</h1>
+        <p>Fedezd fel a munkáimat és tapasztalataimat.</p>
+    </header>
     
+    <section id="home">
+        <h2>Főoldal</h2>
+        <p>Itt találod a legújabb munkáimat és híreimet.</p>
+    </section>
+    <article id="about">
+        <h2>Rólam</h2>
+        <p>Vugernicsek Tamás vagyok, másodéves gazdaságinformatikus hallgató a Szegedi Tudományegyetem Természettudományi és Informatikai Karán (TTIK). Nagyon nyitott vagyok a Frontend fejlesztés iránt, és folyamatosan bővítem a tudásomat.
+            Mivel kevés tapasztalatom van a Backend fejlesztésben, ezér szeretném bővíteni a tudásomat benne is. Ha úgy alakul, akkor Fullstack fejlesztői pozícióra is nyitott vagyok.</p>
+        
+
+        <h3>Tapasztalatok</h3>
+        <div id="tapasztalatok">
+            <div class="tapasztalat">
+                <h4>Frontend</h4>
+                <div class="icon_container">
+                    <img src="./img/html_logo.png" alt="HTML_icon">
+                    <img src="./img/css.png" alt="CSS_icon">
+                    <img src="./img/javascript.png" alt="JavaScript_icon">
+
+                </div>
+
+            </div>
+            <div class="tapasztalat">
+                <h4>Backend</h4>
+                <div class="icon_container">
+                    <img src="./img/java_logo.png" alt="Java_icon">
+                    <img src="./img/python_logo.png" alt="Python_icon">
+                    <img src="./img/mysql_logo.png" alt="MySQL_icon">
+                </div>
+            </div>
+            <div class="tapasztalat">
+                <h4>Folyamatban lévő tanulások</h4>
+                <div class="icon_container">
+                    <img src="./img/c++_logo.png " alt="C++_icon">
+                </div>
+            </div>
+        </div>
+
+        <h2 id="projects">Projektek</h2>
+        <p>Folyamatban</p>
+    </article>
+    <aside id="contact">
+        <h2>Kapcsolat</h2>
+        <p>Ha szeretnél velem dolgozni vagy kérdésed van, írj nekem az alábbi e-mail címre: <a href="mailto:vugtomi@gmail.com">vugtomi@gmail.com</a></p>
+    </aside>
+    <footer>
+        <p>&copy; 2025 Webportfólió</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
