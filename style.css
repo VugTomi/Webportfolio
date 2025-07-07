@@ -12,16 +12,20 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 1em 2em;
     background-color: #1A0B2E;
     position: fixed;
     top: 0; 
+    width: 100%;
+    z-index: 10;
 }
 
 ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2em;
 }
 
@@ -152,7 +156,6 @@ article #tapasztalatok{
 }
 
 
-
 .tapasztalat:last-child img {
     width: 60px;
     height: auto;
@@ -181,4 +184,93 @@ footer {
     text-align: center;
     padding: 1em 0;
     background-color: #1A0B2E;
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding: 1em 4em;
+        justify-content: space-evenly;    
+    }
+
+    ul {
+        justify-content: space-evenly;
+        gap: 5em;        
+    }
+
+    ul li a {
+        font-size: 1em;
+    }
+
+    header {
+        margin-top: 4em;
+        padding: 3em 0;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
+
+    article {
+        padding: 2em 0;
+    }
+
+    article h2 {
+        font-size: 1.5em;
+        padding: 0 4em;
+    }
+
+    article p {
+        font-size: 1.1em;
+        padding: 0.5em 4em 2em;
+    }
+
+    article p:last-child {
+        margin-bottom: 0em;
+        padding: 0 4em;
+    }
+
+    article h3 {
+        font-size: 1.4em;
+        padding: 0 4em;
+    }
+
+    article #tapasztalatok {
+        padding: 0 4em;
+    }
+
+    .tapasztalat {
+        padding: 2em;
+        margin: 2em 0;
+    }
+
+    .tapasztalat h4 {
+        font-size: 1.4em;
+    }
+
+
+    aside {
+        padding: 2em 4em;
+    }
+
+    aside h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 2em 0;
+    }
 }
